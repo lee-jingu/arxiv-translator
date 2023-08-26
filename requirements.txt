@@ -1,0 +1,4 @@
+deepl
+gradio
+omegaconf
+beautifulsoup4
