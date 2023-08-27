@@ -1,11 +1,11 @@
 import deepl
-from omegaconf import DictConfig
+from omegaconf import OmegaConf
 
 
 class DeeplTranslator:
     @staticmethod
     def from_config(config: str):
-        api_key = DictConfig.load(config)["deepl"]
+        api_key = OmegaConf.load(config)["deepl"]
         return DeeplTranslator(api_key)
 
     def __init__(self, api_key: str):
